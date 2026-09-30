@@ -1,5 +1,9 @@
 # 更新日志 📔
 
+## 1.1.3 (2026-9-30)
+
+- 维护信息
+
 ## 1.1.2 (2026-6-28)
 
 ## 1.1.1 (2026-6-24)
@@ -41,17 +45,17 @@
 使用的的时候，如果使用
 
 ```bash
-output=$(npx @qqi/check-version c=. 2>&1)
+output=$(npx @vvi/check-version c=. 2>&1)
 # 执行 npx  的返回值
 exit_code=$?
 ```
 
-获取到的 `exit` 的值永远是 0 ，因为这个值是 npx 的返回状态码值，而不是 `npx @qqi/check-version c=. 2>&1` 的执行返回状态值。
+获取到的 `exit` 的值永远是 0 ，因为这个值是 npx 的返回状态码值，而不是 `npx @vvi/check-version c=. 2>&1` 的执行返回状态值。
 纳闷的是
 
 ```bash
 tag=""
-if ! tag=$(npx @qqi/check-version c=. 2>&1); then
+if ! tag=$(npx @vvi/check-version c=. 2>&1); then
   echo "执行出错：${tag}"
   exit 1
 fi
@@ -59,7 +63,7 @@ fi
 ...
 ```
 
-却又能正确的捕获 `npx @qqi/check-version c=. 2>&1` 的执行结果与输出。。。就是很邪门
+却又能正确的捕获 `npx @vvi/check-version c=. 2>&1` 的执行结果与输出。。。就是很邪门
 
 ## v0.1.2 （5 🈷️ 9 日 2025 年）
 

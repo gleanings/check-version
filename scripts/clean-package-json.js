@@ -33,15 +33,15 @@ packageJson = {
   sideEffects: false, // 核心：开启 Tree Shaking
   files: ['bin.js', 'LICENSE', 'README.md', 'CHANGELOG.md'],
   keywords: ['check-version', 'mudbean', 'vvi'],
-  homepage: 'https://npm.lmssee.com/check-version',
+  homepage: 'https://npms.pages.cn/check-version',
   dependencies,
   bugs: {
-    url: 'https://github.com/MrMudBean/check-version/issues',
+    url: 'https://github.com/gleanings/check-version/issues',
     email: 'Mr.MudBean@outlook.com',
   },
   repository: {
     type: 'git',
-    url: 'git+https://github.com/MrMudBean/check-version.git',
+    url: 'git+https://github.com/gleanings/check-version.git',
   },
   publishConfig: {
     access: 'public',

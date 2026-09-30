@@ -1,6 +1,6 @@
 # @vvi/check-version
 
-[![version](<https://img.shields.io/npm/v/@vvi/check-version.svg?logo=npm&logoColor=rgb(0,0,0)&label=版本号&labelColor=rgb(73,73,228)&color=rgb(0,0,0)>)](https://www.npmjs.com/package/@vvi/check-version) [![issues 提交](<https://img.shields.io/badge/issues-提交-rgb(255,0,63)?logo=github>)](https://github.com/MrMudBean/check-version/issues)
+[![version](<https://img.shields.io/npm/v/@vvi/check-version.svg?logo=npm&logoColor=rgb(0,0,0)&label=版本号&labelColor=rgb(73,73,228)&color=rgb(0,0,0)>)](https://www.npmjs.com/package/@vvi/check-version) [![issues 提交](<https://img.shields.io/badge/issues-提交-rgb(255,0,63)?logo=github>)](https://github.com/gleanings/check-version/issues)
 
 一个简单的本地版本检测工具
 
@@ -57,7 +57,7 @@ npx @vvi/check-version n=core c=lists s # 推荐模式
 npx @vvi/check-version n=core c lists s
 ```
 
-若想在其他非分包的项目使用，即单独的项目使用配置，使用 `npx @qqi/check-version c=.` 即可。
+若想在其他非分包的项目使用，即单独的项目使用配置，使用 `npx @vvi/check-version c=.` 即可。
 
 ## 使用示例
 
@@ -65,7 +65,7 @@ npx @vvi/check-version n=core c lists s
 
 ```bash
 CHECK_VERSION="@vvi/check-version"
- 
+
 # 输出的 npm 发布的 tag。也可以通过调整 cwd 和 name 的参数来适配实际的项目地址
 tag=""
 if ! tag=$(npx --yes "${CHECK_VERSION}" c=. 2>&1); then

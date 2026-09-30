@@ -28,7 +28,7 @@ const command = new Args<{
   cwd: undefined;
   name: undefined;
   skip: undefined;
-}>('@qqi/check-version');
+}>('@vvi/check-version');
 
 command.bind([
   'cwd <c> (检测的工作文件夹的位置路径，缺省值为当前跟路径的 packages)',
